@@ -179,6 +179,7 @@ int main()
     size_t len = strlen(buffer);
     char *string = new char[len];
     strncpy(string, buffer, len);
+    string[len-1] = '\0';
 
     // Add the string to the Queue
     queue.push_back(string);
